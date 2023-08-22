@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left Frame</title>
+</head>
+
+<body bgcolor="#958ff7">
+    <table border="0" align="center">
+        <tr>
+            <td>
+                <input type="text" placeholder="Search People"
+                    onfocus="if (this.placeholder == 'Search People') this.placeholder = ''"
+                    onblur="if (this.placeholder == '') this.placeholder = 'Search People'">
+            </td>
+            <td><button>My Posts</button></td>
+            <td><button>My Comments</button></td>
+            <td><button>Saved Posts</button></td>
+            <td>
+                <select>
+                    <option value="" disabled selected>Filter Posts By</option>
+                    <option value="option1">No Filters</option>
+                    <option value="option2">Latest Posts</option>
+                    <option value="option3">Marked</option>
+                    <option value="option4">Unread</option>
+                    <option value="option5">People you follow</option>
+                </select>
+            </td>
+            <td><button>Friends</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>

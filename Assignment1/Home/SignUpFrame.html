@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+
+<body background="/Images/Background/Background-Image-1.jpg">
+    <center>
+        <input type="image" src="/Images/Buttons/SignUp-Button.png" alt="Submit" value="SignUp"><br><br>
+        <form>
+            <input type="text" id="name" name="name" required placeholder="Name: "
+                onfocus="if (this.placeholder == 'Name: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'Name: '"><br><br>
+
+            <input type="email" id="email" name="email" required placeholder="Email: "
+                onfocus="if (this.placeholder == 'Email: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'Email: '"><br><br>
+
+            <input type="text" id="roll_number" name="roll_number" required placeholder="Roll Number: "
+                onfocus="if (this.placeholder == 'Roll Number: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'Roll Number: '"><br><br>
+
+            <label for="photo">Upload Your Photo:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="file" id="photo" name="photo" accept="image/*" required accept=".jpg,.png"><br><br>
+
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="date" id="birthday" name="birthday" required placeholder="Birthday: " min="2020-01-01"
+                onfocus="if (this.placeholder == 'Birthday: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'Birthday: '"><br><br>
+
+            <input type="password" id="password" name="password" required placeholder="Password: " min="5"
+                maxlength="20" onfocus="if (this.placeholder == 'Password: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'Password: '">
+
+            <input type="password" id="confirm_password" name="confirm_password" required
+                placeholder="Confirm Password: " min="5" maxlength="20"
+                onfocus="if (this.placeholder == 'Confirm Password: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'Confirm Password: '"><br><br>
+
+            <input type="text" id="city" name="city" required placeholder="City: "
+                onfocus="if (this.placeholder == 'City: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'City: '">
+
+            <input type="text" id="state" name="state" required placeholder="State: "
+                onfocus="if (this.placeholder == 'State: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'State: '">
+
+            <input type="text" id="country" name="country" required placeholder="Country: "
+                onfocus="if (this.placeholder == 'Country: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'Country: '"><br><br>
+
+            <textarea id="address" name="address" required placeholder="Address: " rows="3" cols="50"
+                onfocus="if (this.placeholder == 'Address: ') this.placeholder = ''"
+                onblur="if (this.placeholder == '') this.placeholder = 'Address: '"></textarea><br>
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the terms and conditions</label>
+        </form>
+        <br>
+        <hr width="50%">
+        <br>
+        <form>
+            <input type="image" src="/Images/Buttons/Login-Button.png" alt="Submit" value="Login"><br><br>
+            <input type="email" id="loginEmail" name="loginEmail" required placeholder="Email: "><br><br>
+            <input type="password" id="loginPassword" name="loginPassword" required placeholder="Password: " min="5"
+                maxlength="20"><br>
+        </form>
+    </center>
+</body>
+
+</html>
