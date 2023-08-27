@@ -1,0 +1,132 @@
+/* right-panel-styles.css */
+.right-panel {
+  width: 80%;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.top-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(71, 134, 216, 0.5);
+  padding: 20px;
+  z-index: 1;
+  margin-right: 18px;
+}
+
+.top-navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-navigation li {
+  margin-left: 20px;
+}
+
+.top-navigation a {
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(255, 255, 255);
+  position: relative; /* Add relative positioning for pseudo-elements */
+}
+
+/* Hover animation */
+.top-navigation a::before,
+.top-navigation a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.3s ease;
+}
+
+.top-navigation a::before {
+  top: -6px;
+  left: 0;
+}
+
+.top-navigation a::after {
+  bottom: -6px;
+  right: 0;
+}
+
+.top-navigation a:hover::before,
+.top-navigation a:hover::after {
+  width: 100%; /* Expand the width on hover */
+}
+
+.right-content {
+  padding: 20px;
+}
+
+/* Styling for each section */
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgba(242, 242, 242, 0.8);
+  border-radius: 10px;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+.section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center both items horizontally */
+  margin-bottom: 30px;
+}
+
+.about-me-image {
+  flex: 1; /* Distribute available space equally to both images */
+  overflow: hidden; /* Hide any overflowing content */
+  margin: 10px; /* Add margin around each image */
+}
+
+.about-me-image img {
+  width: 100%; /* Make sure the image fits within the container */
+  border-radius: 5%;
+  max-height: 300px;
+}
+
+.about-me-caption {
+  flex: 1; /* Distribute available space equally to both captions */
+  margin-top: 10px;
+  text-align: center;
+}
+
+.about-me-text {
+  flex: 1;
+}
+
+.about-me-description {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.6;
+}
