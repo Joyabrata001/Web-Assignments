@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="./CSS/panels-styles.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/left-panel-styles.css">
-    <link rel="stylesheet" type="text/css" href="./CSS/right-panel-styles.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
     <div class="panels-container">
@@ -56,8 +54,9 @@
                 <ul>
                     <li><a href="#about-me">About Me</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#college-results">College Results</a></li>
                     <li><a href="#open-to-work">Open to Work</a></li>
+                    <li><a href="#" id="theme-toggle"><img src="./Resources/Icons/theme.png" height="15px" alt="Theme Toggle"></a></li>
                 </ul>
             </div>
             <div class="right-content">
@@ -72,38 +71,64 @@
                         <div class="about-me-item">
                             <div class="about-me-image">
                                 <img src="./Resources/Images/IIEST.jpg" alt="IIEST Shibpur">
-                                <p class="about-me-caption">Caption for IIEST Shibpur image.</p>
+                                <p class="about-me-caption">My College</p>
                             </div>
                             <div class="about-me-image">
                                 <img src="./Resources/Images/SPHS.jpg" alt="South Point High School">
-                                <p class="about-me-caption">Caption for South Point High School image.</p>
+                                <p class="about-me-caption">My School</p>
                             </div>
                         </div>
                     </div>
                 </section>
                 
-                <section id="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React.js</li>
-                        <li>Node.js</li>
-                        <li>PHP</li>
-                        <li>MySQL</li>
-                    </ul>
-                </section>
+                <section id="skills" class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="skills-container">
+                        <div class="skill-card">
+                            <img src="./Resources/Icons/html5.png" alt="HTML5">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./Resources/Icons/css3.png" alt="CSS3">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./Resources/Icons/javascript.png" alt="JavaScript">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <img src="./Resources/Icons/c++.png" alt="C++">
+                            <p>C++</p>
+                        </div>
+                    </div>
+                </section>                
                 
-                <section id="resume">
-                    <h2>Resume</h2>
-                    <p>You can download my resume <a href="./Resources/Resume.pdf" target="_blank">here</a>.</p>
-                </section>
+                <section id="college-results" class="section">
+                    <h2 class="section-title">College Results</h2>
+                    <div class="rank-cards">
+                        <div class="rank-card">
+                            <img src="./Resources/Images/rank-card.jpg" alt="Rank Card 1">
+                            <p>Semester 1</p>
+                        </div>
+                        <div class="rank-card">
+                            <img src="./Resources/Images/rank-card.jpg" alt="Rank Card 2">
+                            <p>Semester 2</p>
+                        </div>
+                        <div class="rank-card">
+                            <img src="./Resources/Images/rank-card.jpg" alt="Rank Card 3">
+                            <p>Semester 3</p>
+                        </div>
+                    </div>
+                </section>                
                 
-                <section id="open-to-work">
+                <section id="open-to-work" class="section">
                     <h2>Open to Work</h2>
                     <p>I'm currently open to new opportunities. If you're interested in collaborating or hiring me for a project, feel free to reach out through the contact information provided.</p>
+                    <div class="resume-button">
+                        <a href="./Resources/Resume.pdf" target="_blank" class="btn-download">Download Resume</a>
+                    </div>
                 </section>
+                
             </div>
         </div>
     </div>
