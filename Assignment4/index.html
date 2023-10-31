@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP and AJAX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header><img src="./assets/images/icons/check2-square.svg" alt="" srcset="">All Tasks</header>
+    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+        <div class="list-group custom-list-group">
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+                onclick="displayMessage()">
+                <img src="./assets/images/icons/brilliance.svg" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Display "Hello PHP"</h6>
+                        <p class="mb-0 opacity-75">Click the box to display "Hello PHP"</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+                onclick="displayGrade()">
+                <img src="./assets/images/icons/brilliance.svg" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Display grade of student for marks as input at the client side</h6>
+                        <p class="mb-0 opacity-75">Click the box to enter marks of student and display the grade</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+                onclick="displayOddNumbers()">
+                <img src="./assets/images/icons/brilliance.svg" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Display only odd numbers between 1 to N</h6>
+                        <p class="mb-0 opacity-75">N is the user input from the client-side</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+                onclick="sortNumbers()">
+                <img src="./assets/images/icons/brilliance.svg" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Sort N numbers</h6>
+                        <p class="mb-0 opacity-75">N is the user input from the client-side</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+                onclick="displayAnimalNames()">
+                <img src="./assets/images/icons/brilliance.svg" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Display N animal names</h6>
+                        <p class="mb-0 opacity-75">N is the user input from the client-side</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+                onclick="displayAnimalImages()">
+                <img src="./assets/images/icons/brilliance.svg" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Display N animal images</h6>
+                        <p class="mb-0 opacity-75">N is the user input from the client-side</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"
+                onclick="displayFeedbackForm()">
+                <img src="./assets/images/icons/brilliance.svg" alt="twbs" width="32" height="32"
+                    class="rounded-circle flex-shrink-0">
+                <div class="d-flex gap-2 w-100 justify-content-between">
+                    <div>
+                        <h6 class="mb-0">Create a form at the client side containing the following elements and display
+                            the information at the server page as feedback</h6>
+                        <p class="mb-0 opacity-75">It contains the following things
+                        <ul class="mb-0 opacity-75">
+                            <li>Textbox</li>
+                            <li>Password</li>
+                            <li>Option button</li>
+                            <li>List box</li>
+                            <li>File upload</li>
+                            <li>Hidden element</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </a>
+            <div id="output" class="text-center">
+                <button class="btn " type="button" disabled style="border: none; display: flex; justify-content: center; align-items: center; width: 100%;">
+                    <span class="spinner-grow spinner-grow-sm" aria-hidden="true" style="width: 2rem; height: 2rem;"></span>
+                    <span role="status" style="padding: 0px 50px; font-size: larger;">Click one of the tasks to get started</span>
+                    <span class="spinner-grow spinner-grow-sm" aria-hidden="true" style="width: 2rem; height: 2rem;"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
