@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Faculty</title>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#"><img src="./assets/images/icons/iiest.png" height="50"></a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#">Departments</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <!-- <li><a>Search for a faculty</a></li> -->
+                <li>
+                    <div class="navbar">
+                        <input type="text" id="search-input" placeholder="Search for a profile">
+                        <button id="search-button">Search</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="toggle-profile-list">Click to View Faculty Names at a Glance</div>
+        <div class="faculty-list"><span id="faculty-list"></span></div>
+        <div class="profile"></div>
+    </div>
+    <script src="faculty.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: start;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card1 {
+    height: 90vh;
+    width: 350px;
+    background-color: rgba(211, 211, 211, 0.484);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile-card1>img {
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile-card1>* {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.profile-card1>.name {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.profile-card1>.designation {
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.profile-card1>.contact-list {
+    background-color: rgba(226, 226, 226, 0.488);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile-card1>ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.profile-card1>ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-bottom: 8px;
+    color: cornflowerblue;
+}
+
+.profile-card1>ul li .icons {
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.more-details {
+    width: 600px;
+    height: 90vh;
+    /* margin-left: 20px; */
+    background-color: rgba(211, 211, 211, 0.484);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile-about {
+    padding: 20px;
+}
+
+.profile-qualifications {
+    padding: 20px;
+}
+
+.profile-details-category {
+    /* margin-left: 20px; */
+    /* height: 90vh; */
+    /* background-color: rgba(211, 211, 211, 0.484); */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-details-category div {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(245, 245, 245, 0.411);
+    border-radius: 10px;
+    color: rgb(83, 83, 83);
+}
+
+.profile-details-category div:hover {
+    background-color: white;
+}
