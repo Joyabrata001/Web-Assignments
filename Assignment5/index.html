@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Server</title>
+    <style>
+        .myform {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="/assets/images/qr-code.jpg"  style="height: 100px; width: auto;" alt="qr-image">
+    <div class="myform">
+        <form class="row g-3" method="POST" action="/">
+
+            <div class="col-12 text-center" style="color: red; font-size: larger; font-weight: bolder;">Fill up the form
+                to get win exciting cashbacks and rewards! ™</div>
+
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email<span style="color: red;">*</span></label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="sample@example.com"
+                    name="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password<span style="color: red;">*</span></label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="eg. TK6mBvaEYUdMQgM"
+                    name="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address Line 1<span style="color: red;">*</span></label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="eg. 1234 Main St"
+                    name="inputAddress">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address Line 2<span style="color: red;">*</span></label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="eg. Apartment, or Floor"
+                    name="inputAddress2">
+            </div>
+            <div class="col-md-3">
+                <label for="inputCountry" class="form-label">Country</label>
+                <select id="inputCountry" class="form-select" name="inputCountry" disabled style="cursor: not-allowed;">
+                    <option selected>India</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select" name="inputState" disabled style="cursor: not-allowed;">
+                    <option selected>West Bengal</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="inputCity" class="form-label">City<span style="color: red;">*</span></label>
+                <select id="inputCity" class="form-select" name="inputCity">
+                    <option selected disabled>Choose city.</option>
+                    <option>Kolkata</option>
+                    <option>Howrah</option>
+                    <option>Darjeeling</option>
+                    <option>Siliguri</option>
+                    <option>Asansol</option>
+                    <option>Durgapur</option>
+                    <option>Burdwan</option>
+                    <option>Murshidabad</option>
+                    <option>Kharagpur</option>
+                    <option>Haldia</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="inputZip" class="form-label">Zip<span style="color: red;">*</span></label>
+                <input type="inputZip" class="form-control" id="inputZip" name="inputZip">
+            </div>
+
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Please attach valid identification proof (*.pdf, *.jpg, *.jpeg,
+                    *.png)<span style="color: red;">*</span></label>
+                <input class="form-control" type="file" id="formFile" name="formFile">
+            </div>
+
+            <div class="form-group col-12 text-center">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Yes, I would like to receive monthly
+                        newsletters</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                    <label class="form-check-label" for="inlineRadio2">No, I prefer not to receive newsletters</label>
+                </div>
+            </div>
+
+            <div class="form-group col-12 text-center">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" name="checkTC">
+                    <label class="form-check-label" for="gridCheck">
+                        I agree to the Terms and Conditions™ <span style="color: red;">*</span></a>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+            <footer class="col-12 text-center" style="font-size: 10px;">™ Terms and Conditions: Applicable on selected
+                items. Offer subject to change without notice.</footer>
+        </form>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
